@@ -50,3 +50,5 @@ This project focuses on **frontend logic and user experience**, not medical accu
 
 ```bash
 index.html
+```
+
