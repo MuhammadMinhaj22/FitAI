@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="https://www.shutterstock.com/image-vector/fitness-gym-neon-light-glowing-260nw-1017414175.jpg">
+    <title>Planner - AI Fitness & Diet Planner</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loader"></div>
+    </div>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">FitAI</a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="planner.html" class="active">Planner</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="planner-section">
+        <div class="container">
+            <h2>Fitness Planner</h2>
+            <form id="planner-form">
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="weight">Weight (kg)</label>
+                    <input type="number" id="weight" required>
+                </div>
+                <div class="form-group">
+                    <label for="height">Height (cm)</label>
+                    <input type="number" id="height" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="goal">Fitness Goal</label>
+                    <select id="goal" required>
+                        <option value="lose">Lose Weight</option>
+                        <option value="gain">Gain Muscle</option>
+                        <option value="fit">Stay Fit</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="activity">Activity Level</label>
+                    <select id="activity" required>
+                        <option value="low">Low</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                <button type="submit" class="cta-button">Generate Plan</button>
+            </form>
+
+            <div id="thinking-animation" class="hidden">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+
+            <div id="output-section" class="hidden">
+                <div id="bmi-result" class="output-card"></div>
+                <div id="workout-plan" class="output-card"></div>
+                <div id="diet-plan" class="output-card"></div>
+                <div id="weekly-schedule" class="output-card"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 FitAI. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
