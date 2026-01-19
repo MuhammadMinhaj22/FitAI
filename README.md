@@ -6,6 +6,11 @@ The goal of this project was to combine **clean UI, smooth animations, and AI-ba
 
 ---
 
+## Live Demo
+🔗 [View Website](https://fit-ai-tawny.vercel.app/)
+
+---
+
 ## 🚀 Features
 
 - User inputs:
@@ -51,4 +56,3 @@ This project focuses on **frontend logic and user experience**, not medical accu
 ```bash
 index.html
 ```
-
